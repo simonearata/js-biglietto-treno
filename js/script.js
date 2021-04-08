@@ -7,9 +7,10 @@ var over_65 = prezzo_km - (prezzo_km * 0.4);
 
 
 if(età > 18 && età < 65){
-  console.log(" il prezzo del biglietto è " + prezzo_km)
+  document.getElementById("prz").innerHTML = "il prezzo del biglietto è " + prezzo_km
 }else if( età < 18){
-  console.log("il prezzo del biglietto è " + minorenni.toFixed(2))
+  document.getElementById("prz").innerHTML = "il prezzo del biglietto è " + minorenni.toFixed(2)
 }else{
-  console.log("il prezzo del biglietto è " + over_65.toFixed(2))
+  document.getElementById("prz").innerHTML = "il prezzo del biglietto è " + over_65.toFixed(2)
 }
+
